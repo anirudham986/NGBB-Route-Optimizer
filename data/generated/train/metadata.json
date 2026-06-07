@@ -1,0 +1,10 @@
+{
+  "split": "train",
+  "n_instances": 10,
+  "size_range": [
+    20,
+    50
+  ],
+  "capacity": 50,
+  "seed_offset": 0
+}

@@ -1,0 +1,12 @@
+# @package _global_
+defaults:
+  - il_baseline
+  - _self_
+
+training:
+  curriculum:
+    enabled: true
+    size_min: 20
+    size_max: 50
+    ramp_steps: 100000
+    step_size: 5

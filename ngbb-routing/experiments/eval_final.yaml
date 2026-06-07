@@ -1,0 +1,11 @@
+# Final evaluation config
+defaults:
+  - il_baseline
+  - _self_
+
+evaluation:
+  checkpoint: checkpoints/best.pt
+  test_splits: [test_small, test_large, test_tsplib]
+  baselines: [random, pseudocost, strong_branching, ortools, nearest_neighbour]
+  seeds: 5
+  output_dir: results/final/

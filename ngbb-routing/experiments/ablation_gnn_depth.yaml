@@ -1,0 +1,8 @@
+# Ablation: GNN depth (1/2/3/4 layers)
+defaults:
+  - il_baseline
+  - _self_
+
+sweep:
+  parameter: model.n_layers
+  values: [1, 2, 3, 4]

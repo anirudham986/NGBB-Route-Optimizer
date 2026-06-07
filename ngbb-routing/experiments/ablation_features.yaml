@@ -1,0 +1,16 @@
+# Ablation: feature set variants
+defaults:
+  - il_baseline
+  - _self_
+
+sweep:
+  parameter: features
+  values:
+    - name: full
+      var_input_dim: 12
+    - name: no_pseudocost
+      var_input_dim: 9
+      drop_features: [pseudocost_up, pseudocost_down, pseudocost_reliability]
+    - name: minimal
+      var_input_dim: 6
+      drop_features: [pseudocost_up, pseudocost_down, pseudocost_reliability, degree_from, degree_to, is_depot_edge]

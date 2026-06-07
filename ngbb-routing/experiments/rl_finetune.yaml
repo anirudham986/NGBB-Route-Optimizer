@@ -1,0 +1,15 @@
+# @package _global_
+defaults:
+  - il_baseline
+  - _self_
+
+rl:
+  pretrained_checkpoint: checkpoints/il_best.pt
+  reward: neg_node_ratio
+  baseline: moving_average
+  baseline_momentum: 0.99
+  kl_penalty_weight: 0.01
+  entropy_bonus: 0.001
+  n_episodes: 100000
+  episode_node_limit: 200
+  lr: 3.0e-5

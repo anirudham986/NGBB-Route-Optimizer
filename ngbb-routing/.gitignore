@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data (generated)
+data/generated/
+data/processed/
+data/raw/tsplib/*.vrp
+
+# Checkpoints & results (generated)
+checkpoints/*.pt
+results/*.csv
+results/*.png
+results/*.json
+
+# Experiment outputs
+outputs/
+wandb/
+mlruns/
+
+# Node.js
+visualizer/node_modules/
+visualizer/dist/
+visualizer/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
